@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import BudgetComparisonChart from "./components/BudgetComparisonChart";
+import BudgetComparisonChart from "../components/BudgetComparisonChart";
 
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 import {
