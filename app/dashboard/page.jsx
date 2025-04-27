@@ -1,9 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import BudgetComparisonChart from "@/components/BudgetComparisonChart";
+import BudgetComparisonChart from "./components/BudgetComparisonChart";
+
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "../components/ui/Card";
 
 export default function DashboardPage() {
   const [transactions, setTransactions] = useState([]);
@@ -54,7 +60,6 @@ export default function DashboardPage() {
       <h1 className="text-3xl font-bold">Dashboard</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Total Expenses Card */}
         <Card className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white shadow-xl">
           <CardHeader>
             <CardTitle>Total Spent This Month</CardTitle>
@@ -64,7 +69,6 @@ export default function DashboardPage() {
           </CardContent>
         </Card>
 
-        {/* Category Breakdown Pie Chart */}
         <Card className="col-span-2 shadow-lg">
           <CardHeader>
             <CardTitle>Expenses Breakdown by Category</CardTitle>

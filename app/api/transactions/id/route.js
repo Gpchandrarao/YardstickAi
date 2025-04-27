@@ -1,5 +1,6 @@
-import { connectDB } from "@/lib/mongoose";
-import { Transaction } from "@/models/transaction";
+import { connectDB } from "../../../../lib/mongodb";
+
+import { Transaction } from "../../../../models/transaction";
 
 export async function PUT(req, { params }) {
   await connectDB();
